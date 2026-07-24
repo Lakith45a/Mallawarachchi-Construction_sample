@@ -100,8 +100,8 @@
   --s-extra-bold: 800;
   --s-black: 900;
   --transition: all 0.4s ease;
-  --font-primary: "Exo", sans-serif;
-  --font-secondary: "Rubik", sans-serif;
+  --font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-secondary: "Futura", "Futura PT", "Trebuchet MS", Arial, sans-serif;
   --font-third: "Rouge Script", cursive;
   --font-size-b1: 16px;
   --font-size-b2: 16px;
@@ -135,7 +135,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-secondary);
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -205,7 +205,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Exo", sans-serif;
+  font-family: var(--font-primary);
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
@@ -15698,7 +15698,7 @@ header.header-one .header-top-wrapper .right {
   position: absolute;
   height: 100%;
   width: 585px;
-  background: #daf4e4e7;
+  background: #ffffff;
   z-index: -1;
   right: 0;
   top: 0;
@@ -15750,7 +15750,7 @@ header.header-one .header-top-wrapper .right {
   content: "";
   width: 100%;
   height: 108%;
-  background: var(--color-primary);
+  background: #ffffff;
   bottom: 0px;
   right: -10px;
   z-index: -1;
@@ -16622,7 +16622,7 @@ header.header-four .header-mid-one-wrapper .logo-area::after {
   content: "";
   width: 100%;
   height: 108%;
-  background: var(--color-primary-2);
+  background: #ffffff;
   bottom: 0px;
   right: -10px;
   z-index: -1;
@@ -17588,11 +17588,12 @@ header.header-three .header-mid-one-wrapper .header-right {
   position: fixed !important;
   top: 0;
   display: block;
-  z-index: 50;
+  z-index: 500;
   width: 100%;
-  background: #fff;
-  box-shadow: 0px 7px 18px rgba(24, 16, 16, 0.0509803922);
-  animation: headerSticky 0.75s ease forwards;
+  background: #ffffff !important;
+  border-bottom: 3px solid #2196F3 !important;
+  box-shadow: 0px 8px 25px rgba(33, 150, 243, 0.18) !important;
+  animation: headerSticky 0.5s ease forwards;
 }
 .header--sticky.sticky .header-top {
   display: none;
@@ -17601,7 +17602,8 @@ header.header-three .header-mid-one-wrapper .header-right {
   display: none;
 }
 .header--sticky.sticky.header-one {
-  background: #fff;
+  background: #ffffff !important;
+  border-bottom: 3px solid #2196F3 !important;
 }
 .header--sticky.sticky.header-three {
   background: transparent;
@@ -40932,7 +40934,7 @@ edit .quantity-edit button {
   width: 30%;
   padding: 30px;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.02);
+  background: transparent;
   border: 1px solid rgba(228, 228, 228, 0.05);
 }
 .main-footer-one-area.six .single-footer-inner.logo-area .body.one p.desc {
@@ -47694,4 +47696,93 @@ ul.mega-menu-item.parent-nav {
   background: rgba(255, 0, 3, 0.062745098);
   color: #FF0003;
 }
+
+/* Nav bar logo section white background */
+.logo-area,
+.logo-area::before,
+.logo-area::after,
+.header-mid-one-wrapper .logo-area,
+.header-mid-one-wrapper .logo-area::before,
+.header-mid-one-wrapper .logo-area::after,
+header.header-four .header-mid-one-wrapper .logo-area,
+header.header-four .header-mid-one-wrapper .logo-area::before,
+header.header-four .header-mid-one-wrapper .logo-area::after,
+.header-main-2 .header-mid-one-wrapper .logo-area,
+.header-main-2 .header-mid-one-wrapper .logo-area::before,
+.header-main-2 .header-mid-one-wrapper .logo-area::after {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* Logo Nav Bar Separation Line */
+.header-mid-one-wrapper .nav-area {
+  position: relative;
+  padding-left: 25px;
+  margin-left: 15px;
+}
+.header-mid-one-wrapper .nav-area::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 30px;
+  background-color: #2196F3;
+  border-radius: 1px;
+}
+
+/* Global Client Font Override: Titles -> Helvetica, Paragraphs -> Futura */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.title, .section-title, .title-banner, .sub-title {
+  font-family: var(--font-primary) !important;
+}
+
+body, p, .desc, span, li, a, input, textarea, button {
+  font-family: var(--font-secondary);
+}
+
+p, .desc {
+  font-family: var(--font-secondary) !important;
+}
+
+/* Scrolled Sticky Navbar Accent Border */
+header.sticky,
+header.header--sticky.sticky,
+.header--sticky.sticky,
+.header-main.sticky {
+  border-bottom: 3px solid #2196F3 !important;
+  box-shadow: 0px 8px 25px rgba(33, 150, 243, 0.18) !important;
+}
+
+
+.tmp-footer-area .single-footer-inner.logo-area::before,
+.tmp-footer-area .single-footer-inner.logo-area::after,
+.tmp-footer-area .logo-area::before,
+.tmp-footer-area .logo-area::after {
+  display: none !important;
+  content: none !important;
+  background: transparent !important;
+  clip-path: none !important;
+}
+
+/* Ensure footer logo image sits normally (not offset like navbar logo) */
+.tmp-footer-area .single-footer-inner.logo-area img,
+.tmp-footer-area .logo-area img {
+  position: static !important;
+  left: auto !important;
+  max-width: 220px;
+  height: auto;
+  display: block;
+}
+
+/* Footer logo area - dark card box matching brand style */
+.main-footer-one-area.six .single-footer-inner.logo-area {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  padding: 35px !important;
+}
+
 /*# sourceMappingURL=../maps/style.css.map */

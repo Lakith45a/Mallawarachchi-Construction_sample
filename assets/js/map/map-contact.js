@@ -39,12 +39,12 @@
       [
         locationData(
           "assets/images/banner/contact.webp",
-          "101 E 129th St, East Chicago, IN 46312, US",
-          "1-333-345-6868",
-          "inversweb@gmail.com"
+          "776/1, Yakkaduwa, Ja-Ela 11350, Sri Lanka",
+          "077 287 2406",
+          "mallawarachchihomes@gmail.com"
         ),
-        40.709327,
-        -74.004815,
+        7.075600,
+        79.894300,
         1,
         "<div></div>",
       ],
@@ -189,7 +189,7 @@
     var map = new google.maps.Map(document.getElementById("map-contact"), {
       zoom: zoomLevel,
       scrollwheel: false,
-      center: new google.maps.LatLng(40.709295, -74.003099),
+      center: new google.maps.LatLng(7.075600, 79.894300),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       zoomControl: true,
       zoomControlOptions: {
