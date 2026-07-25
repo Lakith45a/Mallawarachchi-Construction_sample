@@ -10539,8 +10539,15 @@ ul li {
   background: url(../images/banner/12.1.webp);
 }
 
-.slider-img-ten {
+.slider-img-header01 {
   background: url(../images/banner/headr01.png);
+}
+.slider-img-header02 {
+  background: url(../images/banner/header02.png);
+}
+
+.slider-img-header03 {
+  background: url(../images/banner/header03.png);
 }
 
 .slider-img-nine {
