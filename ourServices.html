@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 
@@ -37,6 +37,14 @@
     <style>
         .slider-img-seven {
             background: url(https://html.inversweb.com/images/banner/12.webp);
+        }
+    
+        .nav-area .mainmenu li a,
+        .mobile-menu .mainmenu li a,
+        .mainmenu li a,
+        .mainmenu a,
+        .main-nav > a {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
         }
     </style>
 
@@ -96,12 +104,25 @@
                             </div>
                             <div class="header-right">
                                 <div class="cart-search-area">
+                                    <div class="dot-btn hover-bg-light">
+                                        <span class="offcanvas-trigger">
+                                            <span class="offcanvas-bars">
+                                                <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        </span>
+                                        </span>
+                                    </div>
                                 </div>
                                 <!-- single map area -->
                                 <div class="single-component">
-                                    <a href="#" class="tmp-btn btn-primary button-flip btn-sm">
-                                        <span data-text="GET A QUOTE">GET A QUOTE</span>
-                                    </a>
+                                    <div class="menu-area d-block d-xl-none" id="menu-btn">
+                                        <button class="setting-btn color-2">
+                                            <span class="bar bar1"></span>
+                                            <span class="bar bar2"></span>
+                                            <span class="bar bar1"></span>
+                                        </button>
+                                    </div>
                                 </div>
                                 <!-- single map area -->
                             </div>
@@ -435,7 +456,7 @@
     <!-- Brand Area End -->
     <div class="tmp-section-gapBottom bg-white-v2"></div>
     <!-- tmp footer area start -->
-    <div class="tmp-footer-area footer-one footer-five footer-bg pt--200">
+    <div class="tmp-footer-area footer-one footer-five footer-bg pt--200" style="background-color: #0d1a45;">
         <div class="container-3">
             <div class="footer-cta-area cta-two">
                 <div class="cta-image-area">
@@ -446,11 +467,6 @@
                 </div>
                 <div class="cta-area-inner">
                     <h3 class="cta-title">Join the Future of Construction <br> Contact Us Now</h3>
-                    <div class="cta-button-area">
-                        <a href="contact.html" class="tmp-btn btn-primary bg-white button-flip btn-md">
-                            <span data-text="GET A QUOTE">GET A QUOTE</span>
-                        </a>
-                    </div>
                 </div>
                 <div class="shape-area">
                     <img src="assets/images/cta/cta-round.svg" alt="">
@@ -460,36 +476,6 @@
             <div class="row">
                 <div class="col-lg-12 p-0">
                     <div class="main-footer-one-area six pt--80 pb--60">
-
-                        <!-- Company -->
-                        <div class="single-footer-inner company">
-                            <div class="body two">
-                                <h3 class="footer-title">
-                                    Company
-                                    <img src="assets/images/footer/line-2.svg" alt="">
-                                </h3>
-                                <div class="use-full-link-wrapper">
-                                    <a href="about.html" class="single hover-moving-primary">
-                                        About Company
-                                    </a>
-                                    <a href="service.html" class="single hover-moving-primary">
-                                        Services
-                                    </a>
-                                    <a href="clients.html" class="single hover-moving-primary">
-                                        Our Projects
-                                    </a>
-                                    <a href="contact.html" class="single hover-moving-primary">
-                                        Contact Info
-                                    </a>
-                                    <a href="pricing.html" class="single hover-moving-primary">
-                                        Project Pricing
-                                    </a>
-                                    <a href="gallery.html" class="single hover-moving-primary">
-                                        Work Gallery
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
                         <!-- Services -->
                         <div class="single-footer-inner service">
@@ -542,32 +528,11 @@
                                         <p class="text">Need Support?</p>
                                         <div class="phone d-block">
                                             <p class="mb-1">Email:</p>
-                                            <a href="mailto:mallawarachchihomes@gmail.com" class="number hover-moving-primary d-block">
-                                                mallawarachchihomes@gmail.com
+                                            <a href="mailto:support@mallawarachchihomes.lk" class="number hover-moving-primary d-block">
+                                                support@mallawarachchihomes.lk
                                             </a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Newsletter -->
-                        <div class="single-footer-inner newsletter">
-                            <div class="body five">
-                                <h3 class="footer-title">
-                                    Subscribe Now
-                                    <img src="assets/images/footer/line-2.svg" alt="">
-                                </h3>
-                                <div class="newsletter-area">
-                                    <p class="desc mb--20">
-                                        Subscribe for construction updates, project insights and industry news.
-                                    </p>
-                                    <form action="#" class="form">
-                                        <div class="single-input-wrapper">
-                                            <input type="email" name="email" placeholder="Enter your email" required>
-                                            <button type="submit" class="form-btn tmp-btn btn-primary" aria-label="Subscribe"><i class="fal fa-envelope"></i></button>
-                                        </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -643,150 +608,17 @@
         <div class="mobile-menu d-block d-xl-none">
             <nav class="nav-main mainmenu-nav mt--30">
                 <ul class="mainmenu" id="mobile-menu-active">
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Home</a>
-                        <ul class="submenu">
-                            <li><a class="mobile-menu-link" href="index.html">Construction Company</a></li>
-                            <li><a class="mobile-menu-link" href="index-two.html">Renovation</a></li>
-
-                            <li><a class="mobile-menu-link" href="index-three.html">Construction Service</a></li>
-                            <li><a class="mobile-menu-link" href="index-four.html">Elevate Construction</a></li>
-                            <li><a class="mobile-menu-link" href="index-five.html">Construction</a></li>
-                            <li><a class="mobile-menu-link" href="index-six.html">Demo Construction</a></li>
-                            <li><a class="mobile-menu-link" href="index-seven.html">Construction Shop </a></li>
-                            <li><a class="mobile-menu-link" href="index-eight.html">Eco Build</a></li>
-                            <li><a class="mobile-menu-link" href="index-nine.html">Building</a></li>
-                            <li><a class="mobile-menu-link" href="index-ten.html">Horizon Constructions</a></li>
-
-
-                            <li><a class="mobile-menu-link" href="index-eleven.html">Renovation Two</a></li>
-                            <li><a class="mobile-menu-link" href="index-twelve.html">Factory Demo </a></li>
-                            <li><a class="mobile-menu-link" href="index-thirteen.html">Renovation & Remodeling</a></li>
-                            <li><a class="mobile-menu-link" href="index-fourteen.html">Architecture & Interior</a></li>
-                            <li><a class="mobile-menu-link" href="index-fifteen.html">Construction Video</a></li>
-                            <li><a class="mobile-menu-link" href="index-sixteen.html">Engineering Service</a></li>
-                            <li><a class="mobile-menu-link" href="index-seventeen.html">Handyman Workshop</a></li>
-                            <li><a class="mobile-menu-link" href="index-eighteen.html">Industrial Demo</a></li>
-                            <li><a class="mobile-menu-link" href="index-nineteen.html">Investor Demo</a></li>
-                            <li><a class="mobile-menu-link" href="index-twenty.html">Carpenter Demo</a></li>
-                        </ul>
+                    <li>
+                        <a href="index.html" class="main">Home</a>
                     </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Pages</a>
-                        <ul class="submenu">
-                            <li><a class="mobile-menu-link" href="about.html">About</a></li>
-                            <li><a class="mobile-menu-link" href="service.html">Service</a></li>
-                            <li><a class="mobile-menu-link" href="service-details.html">Service Details</a></li>
-                            <li><a class="mobile-menu-link" href="pricing.html">Pricing</a></li>
-                            <li><a class="mobile-menu-link" href="application.html">Application</a></li>
-                            <li><a class="mobile-menu-link" href="working-process.html">Working Process</a></li>
-                            <li><a class="mobile-menu-link" href="safety.html">Safety</a></li>
-                            <li><a class="mobile-menu-link" href="company-history.html">Company History</a></li>
-                            <li><a class="mobile-menu-link" href="company-value.html">Company Value</a></li>
-                            <li><a class="mobile-menu-link" href="gallery.html">Company Gallery</a></li>
-                            <li><a class="mobile-menu-link" href="career.html">Career</a></li>
-                            <li><a class="mobile-menu-link" href="career-details.html">Career Details</a></li>
-                            <li><a class="mobile-menu-link" href="our-vision.html">Our Vision</a></li>
-                            <li><a class="mobile-menu-link" href="clients.html">Our Clients</a></li>
-                            <li><a class="mobile-menu-link" href="team.html">Team One</a></li>
-                            <li><a class="mobile-menu-link" href="team-two.html">Team Two</a></li>
-                            <li><a class="mobile-menu-link" href="team-three.html">Team Three</a></li>
-                            <li><a class="mobile-menu-link" href="team-four.html">Team Four</a></li>
-                            <li><a class="mobile-menu-link" href="team-details.html">Team Details</a></li>
-                            <li><a class="mobile-menu-link" href="office-branch.html">Our Office Branch</a></li>
-                            <li><a class="mobile-menu-link" href="award.html">Awards</a></li>
-                            <li><a class="mobile-menu-link" href="shop.html">Shop</a></li>
-                            <li><a class="mobile-menu-link" href="shop-details.html">Shop Details</a></li>
-                            <li><a class="mobile-menu-link" href="cart.html">Cart</a></li>
-                            <li><a class="mobile-menu-link" href="checkout.html">Checkout</a></li>
-                            <li><a class="mobile-menu-link" href="sustainability.html">Sustainability</a></li>
-                            <li><a class="mobile-menu-link" href="coming-soon.html">Coming Soon</a></li>
-                            <li><a class="mobile-menu-link" href="404.html">Error 404</a></li>
-                        </ul>
+                    <li>
+                        <a href="about-2.html" class="main">About Us</a>
                     </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Services</a>
-                        <ul class="submenu">
-                            <li><a class="mobile-menu-link" href="service.html">Service Default</a></li>
-                            <li><a class="mobile-menu-link" href="service-two.html">Service Two Swiper</a></li>
-                            <li><a class="mobile-menu-link" href="service-three.html">Service Card Style</a></li>
-                            <li><a class="mobile-menu-link" href="service-three-four.html">Service Style Four</a></li>
-                            <li><a class="mobile-menu-link" href="service-five.html">Service Swiper Flow</a></li>
-                            <li><a class="mobile-menu-link" href="ourServices.html">Service Style Fluid</a></li>
-
-                            <li class="has-droupdown third-lvl">
-                                <a class="main" href="#">Service Details</a>
-                                <ul class="submenu-third-lvl mm-collapse">
-
-                                    <li><a class="mobile-menu-link" href="service-details.html">Service Details</a></li>
-                                    <li><a class="mobile-menu-link" href="service-details-two.html">Service Details Two</a></li>
-                                    <li><a class="mobile-menu-link" href="service-details-slide.html">Service Details Slide</a></li>
-                                    <li><a class="mobile-menu-link" href="service-details-gallery.html">Service Details Gallery</a></li>
-                                    <li><a class="mobile-menu-link" href="service-details-video.html">Service Details Video</a></li>
-                                    <li><a class="mobile-menu-link" href="service-details-popup-video.html">Style Video Popup</a></li>
-                                    <li><a class="mobile-menu-link" href="service-details-classic.html">Style Classic <span class="invers-badge-card">Hot</span></a></li>
-
-                                </ul>
-                            </li>
-
-
-                        </ul>
+                    <li>
+                        <a href="ourServices.html" class="main">Service</a>
                     </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Project</a>
-                        <ul class="submenu">
-                            <li><a class="mobile-menu-link" href="portfolio.html">Project One</a></li>
-                            <li><a class="mobile-menu-link" href="portfolio-two.html">Project Two</a></li>
-                            <li><a class="mobile-menu-link" href="portfolio-three.html">Project Three</a></li>
-
-
-                            <li class="has-droupdown third-lvl">
-                                <a class="main" href="#">Project Details</a>
-                                <ul class="submenu-third-lvl mm-collapse">
-
-                                    <li><a class="mobile-menu-link" href="portfolio-details.html">Project Details</a></li>
-                                    <li><a class="mobile-menu-link" href="portfolio-details-2.html">Project Details Two</a></li>
-                                    <li><a class="mobile-menu-link" href="portfolio-details-gallery.html">Project Details Gallery</a></li>
-                                    <li><a class="mobile-menu-link" href="portfolio-details-video.html">Project Details Video</a></li>
-                                    <li><a class="mobile-menu-link" href="portfolio-details-slide.html">Project Details Slide</a></li>
-                                    <li><a class="mobile-menu-link" href="portfolio-details-video-popup.html">Project Details Video Popup</a></li>
-
-                                </ul>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Blog</a>
-                        <ul class="submenu">
-                            <li><a class="mobile-menu-link" href="blog.html">Blog Grid</a></li>
-                            <li><a class="mobile-menu-link" href="blog-list.html">Blog List</a></li>
-                            <li><a class="mobile-menu-link" href="blog-list-2.html">Blog List Two</a></li>
-                            <li><a class="mobile-menu-link" href="blog-list-3.html">Blog List Three</a></li>
-                            <li><a class="mobile-menu-link" href="blog-bento.html">Blog Bento</a></li>
-                            <li><a class="mobile-menu-link" href="blog-bento-2.html">Blog Bento Two</a></li>
-                            <li><a class="mobile-menu-link" href="blog-bento-3.html">Blog Bento Three</a></li>
-                            <li><a class="mobile-menu-link" href="blog-minimal.html">Blog Minimal</a></li>
-                            <li class="has-droupdown third-lvl">
-                                <a class="main" href="#">Blog Details</a>
-                                <ul class="submenu-third-lvl mm-collapse">
-
-                                    <li><a class="mobile-menu-link" href="blog-details.html">Blog Details</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-bg-image.html">Blog Details Bg Image</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-gallery.html">Blog Details Gallery</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-video.html">Blog Details Video</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-video-popup.html">Blog Details Video Popup</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-quote.html">Blog Details Quote</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-classic.html">Blog Details Classic</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-classic-video.html">Blog Classic Video</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-right-sidebar.html">Blog Details Sidebar</a></li>
-                                    <li><a class="mobile-menu-link" href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                                    <li><a class="mobile-menu-link" href="#">Minimal Style<span class="invers-badge-card">Coming</span></a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="portfolio.html" class="main">Projects</a>
                     </li>
                     <li>
                         <a href="contact.html" class="main">Contact Us</a>
