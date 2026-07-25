@@ -10699,7 +10699,7 @@ ul li {
   transition: transform 0.3s;
 }
 .hover-moving-primary:hover {
-  color: var(--color-primary) !important;
+  color: var(--color-primary-2) !important;
 }
 .hover-moving-primary:hover::after {
   transform-origin: bottom left;
@@ -40485,7 +40485,7 @@ edit .quantity-edit button {
   max-width: max-content;
 }
 .main-footer-one-area .single-footer-inner .use-full-link-wrapper .single:hover {
-  color: var(--color-primary) !important;
+  color: var(--color-primary-2) !important;
 }
 .main-footer-one-area .single-footer-inner .use-full-link-wrapper .single i {
   font-weight: 900;
@@ -40609,7 +40609,7 @@ edit .quantity-edit button {
   gap: 5px;
 }
 .main-footer-one-area .contactus-link-wrapper .single .phone a:hover {
-  color: var(--color-primary) !important;
+  color: var(--color-primary-2) !important;
 }
 .main-footer-one-area .contactus-link-wrapper .single .phone p {
   margin-bottom: 0;
@@ -40650,7 +40650,7 @@ edit .quantity-edit button {
   transition: 0.3s;
 }
 .main-footer-one-area .popular-post-wrapper .single-popular-post .tilte-area:hover .title {
-  color: var(--color-primary);
+  color: var(--color-primary-2);
 }
 .main-footer-one-area .popular-post-wrapper .single-popular-post .thumbnail {
   margin-right: 20px;
@@ -40937,8 +40937,29 @@ edit .quantity-edit button {
   background: transparent;
   border: 1px solid rgba(228, 228, 228, 0.05);
 }
+.main-footer-one-area.six .single-footer-inner.logo-area .body.one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.main-footer-one-area.six .single-footer-inner.logo-area .body.one .logo {
+  display: flex;
+  justify-content: center;
+}
 .main-footer-one-area.six .single-footer-inner.logo-area .body.one p.desc {
   margin-bottom: 30px;
+}
+.main-footer-one-area.six .single-footer-inner.logo-area .body.one .social-share-wrapper-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-footer-one-area.six .single-footer-inner.logo-area .body.one .social-share-wrapper-1 ul {
+  justify-content: center;
 }
 
 .footer-cta-area {
