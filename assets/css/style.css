@@ -19064,7 +19064,7 @@ edit .quantity-edit button {
   padding-top: 50px;
   height: 100%;
   display: block;
-  background-color: white;
+  background-color: #0d1a45;
   z-index: 111111;
   transition: all 600ms ease;
   display: flex;
@@ -45441,15 +45441,12 @@ ul.mega-menu-item.parent-nav {
   background: rgba(255, 112, 41, 0.19);
 }
 
-.mouse-cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  border-radius: 50%;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  visibility: hidden;
+.mouse-cursor,
+.cursor-outer,
+.cursor-inner {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 .cursor-inner {
@@ -48002,6 +47999,74 @@ header .mainmenu a:hover {
 }
 
 .tmp-footer-area .social-share-wrapper-1.style-footer .social-stylle-one li a i {
+  color: #ffffff !important;
+}
+
+/* Mobile View Side Navigation Styling */
+.side-bar {
+  background-color: #0d1a45 !important;
+}
+
+.mobile-menu nav ul li a,
+.mobile-menu .mainmenu li a,
+.mobile-menu-link,
+.mobile-menu nav ul li a.main,
+.side-bar .mainmenu li a,
+.side-bar a {
+  color: #ffffff !important;
+}
+
+.mobile-menu nav ul li a:hover,
+.mobile-menu .mainmenu li a:hover,
+.side-bar .mainmenu li a:hover {
+  color: #2196F3 !important;
+}
+
+.mobile-menu nav ul li.has-droupdown > a::after {
+  color: #ffffff !important;
+}
+
+.mobile-menu nav ul li a.main,
+.mobile-menu nav ul li.has-droupdown ul li {
+  border-bottom-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.side-bar .close-icon-menu,
+.side-bar button {
+  background: transparent !important;
+}
+
+.side-bar .close-icon-menu i,
+.side-bar button i {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.side-bar .close-icon-menu:hover i,
+.side-bar button i:hover {
+  background: #2196F3 !important;
+  color: #ffffff !important;
+}
+
+.side-bar .social-share-wrapper-1 .short-title {
+  color: #ffffff !important;
+}
+
+.side-bar .social-stylle-one li a {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.side-bar .social-stylle-one li a:hover {
+  background: #2196F3 !important;
+  border-color: #2196F3 !important;
+  color: #ffffff !important;
+}
+
+.side-bar .inner-main-wrapper-desk .inner-content .title,
+.side-bar .inner-main-wrapper-desk .inner-content .disc,
+.side-bar .inner-main-wrapper-desk .inner-content .footer .title {
   color: #ffffff !important;
 }
 
