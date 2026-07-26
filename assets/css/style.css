@@ -48073,6 +48073,13 @@ header .mainmenu a:hover {
   color: #ffffff !important;
 }
 
+.side-bar .social-stylle-one li a .fa-twitter,
+.side-bar .social-stylle-one li a .fa-x-twitter,
+.side-bar .social-stylle-one li a[href*="twitter"],
+.side-bar .social-stylle-one li a[href*="x.com"] {
+  display: none !important;
+}
+
 /* Supply Chain Brand Gallery Styling */
 .tmp-supply-chain-area {
   background-color: #f8fafc !important;
@@ -48106,10 +48113,20 @@ header .mainmenu a:hover {
   transition: all 0.35s ease;
 }
 
-/* Keep 28.webp normalized as it is naturally larger */
+
 .supply-chain-card img[src*="28.webp"] {
   max-height: 52px !important;
   transform: scale(1) !important;
+}
+
+.supply-chain-card img[src*="32.webp"],
+.supply-chain-card img[src*="24.webp"],
+.supply-chain-card img[src*="31.webp"],
+.supply-chain-card img[src*="38.webp"] ,
+.supply-chain-card img[src*="29.webp"] 
+{
+  max-height: 68px !important;
+  transform: scale(1.1) !important;
 }
 
 .supply-chain-card:hover {
@@ -48124,6 +48141,13 @@ header .mainmenu a:hover {
 
 .supply-chain-card:hover img[src*="28.webp"] {
   transform: scale(1.1) !important;
+}
+
+.supply-chain-card:hover img[src*="32.webp"],
+.supply-chain-card:hover img[src*="24.webp"],
+.supply-chain-card:hover img[src*="31.webp"],
+.supply-chain-card:hover img[src*="38.webp"] {
+  transform: scale(1.15) !important;
 }
 
 /*# sourceMappingURL=../maps/style.css.map */
