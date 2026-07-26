@@ -15692,7 +15692,7 @@ header.header-one .header-top-wrapper .right {
 }
 
 .header-mid {
-  background: #F2F3F5;
+  background: #283e6b;
 }
 
 .header-main-2 {
@@ -47754,21 +47754,7 @@ ul.mega-menu-item.parent-nav {
 }
 
 /* Nav bar logo section white background */
-.logo-area,
-.logo-area::before,
-.logo-area::after,
-.header-mid-one-wrapper .logo-area,
-.header-mid-one-wrapper .logo-area::before,
-.header-mid-one-wrapper .logo-area::after,
-header.header-four .header-mid-one-wrapper .logo-area,
-header.header-four .header-mid-one-wrapper .logo-area::before,
-header.header-four .header-mid-one-wrapper .logo-area::after,
-.header-main-2 .header-mid-one-wrapper .logo-area,
-.header-main-2 .header-mid-one-wrapper .logo-area::before,
-.header-main-2 .header-mid-one-wrapper .logo-area::after {
-  background: #ffffff !important;
-  background-color: #ffffff !important;
-}
+
 
 /* Mobile header logo - show full logo (fix left:-118px clip) */
 @media only screen and (max-width: 1199px) {
@@ -47814,6 +47800,8 @@ header.header-four .header-mid-one-wrapper .logo-area::after,
   position: relative;
   padding-left: 25px;
   margin-left: 15px;
+  margin-left: 15px !important;
+  margin-right: -800px;
 }
 .header-mid-one-wrapper .nav-area::before {
   content: "";
@@ -47863,6 +47851,67 @@ header.header--sticky.sticky,
   border-bottom: 3px solid #2196F3 !important;
   box-shadow: 0px 8px 25px rgba(33, 150, 243, 0.18) !important;
 }
+
+/* Navigation Bar Navy Blue Background (#0d1a45) */
+header.header-one .header-main-2,
+header.header-one.header-four .header-main-2,
+.header-main-2,
+.header-main,
+header.header-four,
+.header-one {
+  background-color: #0d1a45 !important;
+}
+
+/* Logo section background matching #0d1a45 */
+.header-main-2 .header-mid-one-wrapper .logo-area::before,
+.header-main-2 .header-mid-one-wrapper .logo-area::after,
+.header-mid-one-wrapper .logo-area::before,
+.header-mid-one-wrapper .logo-area::after,
+header.header-four .header-mid-one-wrapper .logo-area::before,
+header.header-four .header-mid-one-wrapper .logo-area::after,
+.logo-area::before,
+.logo-area::after {
+  background: #0d1a45 !important;
+  background-color: #0d1a45 !important;
+}
+
+/* Make Navbar Logo Pure White */
+.header-mid-one-wrapper .logo-area img,
+.header-main-2 .header-mid-one-wrapper .logo-area img,
+header.header-four .header-mid-one-wrapper .logo-area img {
+  filter: brightness(0) invert(1) !important;
+}
+
+header.sticky,
+header.header--sticky.sticky,
+.header--sticky.sticky,
+.header-main.sticky,
+.header-sticky.sticky .header-main-2 {
+  background: #0d1a45 !important;
+  background-color: #0d1a45 !important;
+}
+
+/* Nav Link Text White for Navy Blue background */
+.nav-area .mainmenu li a,
+.nav-area ul li a,
+.mainmenu li a,
+.mainmenu a,
+.main-nav > a,
+header .nav-area a,
+header .mainmenu a {
+  color: #ffffff !important;
+}
+
+.nav-area .mainmenu li a:hover,
+.nav-area ul li a:hover,
+.mainmenu li a:hover,
+.mainmenu a:hover,
+.main-nav > a:hover,
+header .nav-area a:hover,
+header .mainmenu a:hover {
+  color: #2196F3 !important;
+}
+
 
 
 .tmp-footer-area .single-footer-inner.logo-area::before,
